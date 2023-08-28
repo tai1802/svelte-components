@@ -1,2 +1,11 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+	import IconButton from '../components/IconButton.svelte';
+	import Sidebar from '../components/sidebar.svelte';
+</script>
+
+<div class="h-[100vh]">
+	<div class="w-[72px] h-full">
+		<Sidebar />
+	</div>
+	<div />
+</div>
