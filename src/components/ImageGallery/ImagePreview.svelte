@@ -46,9 +46,10 @@
 				</svg>
 			</button>
 		</div>
-		<div class="h-full object-contain object-center w-full">
+		<div class="h-full object-contain object-center w-full overflow-auto">
 			<div
-				class="m-auto flex flex-col justify-center xmlg:w-[563px] xmlg:h-[563px] xxlg:w-[664px] xxlg:h-[664px]"
+				id="image-preview"
+				class="dragscroll cursor-grab m-auto flex flex-col justify-center xmlg:w-[563px] xmlg:h-[563px] xxlg:w-[664px] xxlg:h-[664px]"
 			>
 				{#if imageItem.videoUrl}
 					<!-- svelte-ignore a11y-missing-attribute -->
@@ -62,12 +63,11 @@
 					</div>
 				{:else}
 					<img
-						id="image-preview"
 						srcset=""
 						src={imageItem.damUrl}
 						sizes=""
 						alt={imageItem.altText}
-						class="w-full h-auto dragscroll"
+						class="w-full h-auto"
 					/>
 				{/if}
 			</div>

@@ -48,6 +48,12 @@
 	};
 </script>
 
+<svelte:head>
+	<script
+		type="text/javascript"
+		src="https://cdn.rawgit.com/asvd/dragscroll/master/dragscroll.js"
+	></script>
+</svelte:head>
 <div class="image-gallery">
 	<ImageHeader />
 	<div class="image-gallery-body">

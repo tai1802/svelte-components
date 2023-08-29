@@ -43,13 +43,6 @@
 	});
 </script>
 
-<svelte:head>
-	<script
-		type="text/javascript"
-		src="https://cdn.rawgit.com/asvd/dragscroll/master/dragscroll.js"
-	></script>
-</svelte:head>
-
 <div class="image-gallery-footer">
 	<div>
 		<button class="btn" on:click={zoomin}>
